@@ -9,7 +9,7 @@ int _tmain(int argc, TCHAR *argv[]) {
 
 	//snapshot all process
 	if (hProcessSnap == INVALID_HANDLE_VALUE) {
-		_tprintf(_T("CreateToolhelp32Snapshot error \n"));
+		_tprintf(_T("Pslist error \n"));
 		exit(EXIT_FAILURE);
 	}
 	PROCESSENTRY32 pe32;
@@ -22,7 +22,7 @@ int _tmain(int argc, TCHAR *argv[]) {
 		exit(EXIT_FAILURE);
 	}
 		
-	_tprintf(_T("\t[Process name] \t[PID]\t[ThreadID]\t[PPID] \n"));
+	_tprintf(_T("\t[Name] \t[PID]\t[ThreadID]\t[PPID] \n")); // https://learn.microsoft.com/en-us/windows/win32/api/tlhelp32/ns-tlhelp32-processentry32
 	//print all process information
 	do {
 		_tprintf(_T("%25s %8d %8d %8d \n"),
