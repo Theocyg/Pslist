@@ -2,7 +2,7 @@
 
 Plist is used to List the process of your windows machine by listing them,  sorted by name, PID, threadID, PPID.
 
-To use it, just execute it from your cmd by using ./<PATH TO THE EXE>
+To use it, use the command gcc -o pslist.exe pslist.c and execute it from your cmd by using ./<PATH TO THE EXE>
 
 By default, without arguments, the program will list every process
 
